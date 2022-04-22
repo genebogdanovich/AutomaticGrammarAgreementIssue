@@ -1,9 +1,9 @@
 /* 
-  Localizable.strings
-  AutomaticGrammarAgreementIssue
+ Localizable.strings
+ AutomaticGrammarAgreementIssue
+ 
+ Created by Gene Bogdanovich on 22.04.22.
+ 
+ */
 
-  Created by Gene Bogdanovich on 22.04.22.
-  
-*/
-
-"Free trial: %lld %@" = "^[%lld ^[%@](grammar: { partOfSpeech: \"noun\" })](inflect: true)";
+"Subscription period: %lld %@" = "^[%lld ^[%@](grammar: { partOfSpeech: \"noun\" })](inflect: true)";

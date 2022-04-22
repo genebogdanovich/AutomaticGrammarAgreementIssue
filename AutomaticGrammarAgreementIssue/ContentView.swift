@@ -14,11 +14,11 @@ struct ContentView: View {
     @State var value = 1
     
     var key: LocalizedStringKey {
-        "Free trial: \(value) \(unit)"
+        "Subscription period: \(value) \(unit)"
     }
     
     var plainStringKey: String {
-        "Free trial: \(value) \(unit)"
+        "Subscription period: \(value) \(unit)"
     }
     
     var body: some View {
@@ -41,7 +41,7 @@ struct ContentView: View {
                     .foregroundColor(.red)
                 
                 // Sees the string (only if I pass literal, not the plainStringKey property), but doesn't apply automatic grammar agreement.
-                Text("\(String(localized: String.LocalizationValue("Free trial: \(value) \(unit)"))) free")
+                Text("\(String(localized: String.LocalizationValue("Subscription period: \(value) \(unit)"))) free")
                     .foregroundColor(.red)
                 
                 
@@ -52,7 +52,7 @@ struct ContentView: View {
                  */
                 
                 HStack(spacing: 3) {
-                    Text("Free trial: \(value) \(unit)")
+                    Text("Subscription period: \(value) \(unit)")
                         .textCase(.lowercase)
                     Text("free")
                 }
