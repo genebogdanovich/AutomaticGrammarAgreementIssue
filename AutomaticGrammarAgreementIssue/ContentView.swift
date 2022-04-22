@@ -37,7 +37,7 @@ struct ContentView: View {
                     .foregroundColor(.red)
                 
                 // This way also doesn't see the string, which is strange, because it should be just like the following way, which does see the string.
-                Text(String(localized: String.LocalizationValue.init(plainStringKey)))
+                Text("\(String(localized: String.LocalizationValue.init(plainStringKey))) free")
                     .foregroundColor(.red)
                 
                 // Sees the string (only if I pass literal, not the plainStringKey property), but doesn't apply automatic grammar agreement.
