@@ -32,6 +32,11 @@ struct ContentView: View {
                 Text("\(NSLocalizedString(plainStringKey, comment: "")) free")
                     .foregroundColor(.red)
                 
+                // Asperi's proposed solution.
+                Text(String(format: NSLocalizedString("Subscription period: %lld %@", comment: ""),
+                            value, unit))
+                .foregroundColor(.red)
+                
                 // Doesn't see the string.
                 Text("\(String(localized: String.LocalizationValue(stringLiteral: plainStringKey))) free")
                     .foregroundColor(.red)
